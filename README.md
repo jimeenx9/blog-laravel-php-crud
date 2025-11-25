@@ -111,25 +111,48 @@ npm run dev
 ```
 ### 📁 Estructura del Proyecto
 ```bash
-├─ app/
-│  ├─ Models/
+
+├─ 🧠 app/
 │  ├─ Http/
-│  │  ├─ Controllers/
-│  │  └─ Middleware/
-├─ resources/
+│  │  ├─ Controllers/      # Controladores del proyecto
+│  │  └─ Middleware/       # Middleware de autenticación
+│  ├─ Models/              # Modelos Eloquent (Article, User…)
+│  ├─ Providers/           # Service providers
+│  └─ View/                # Componentes de Blade (Breeze)
+│
+├─ ⚙ bootstrap/            # Inicialización del framework
+│
+├─ 🗄 config/               # Archivos de configuración
+│
+├─ 🗃 database/
+│  ├─ migrations/          # Tablas: users, articles, etc.
+│  └─ seeders/             # Datos iniciales (seeders)
+│
+├─ 🌆 public/
+│  ├─ index.php            # Punto de entrada de Laravel
+│  └─ img/                 # Capturas usadas en el README
+│
+├─ 🎨 resources/
 │  ├─ views/
-│  │  ├─ articles/
-│  │  ├─ layouts/
-│  │  └─ components/
-│  ├─ css/
-│  └─ js/
-├─ routes/
-│  ├─ web.php
-├─ public/
-├─ database/
-│  ├─ migrations/
-│  └─ seeders/
-└─ README.md
+│  │  ├─ articles/         # Vistas CRUD de artículos
+│  │  ├─ layouts/          # Layout master + guest
+│  │  └─ components/       # Componentes Breeze
+│  ├─ css/                 # blog.css + estilos personalizados
+│  └─ js/                  # Vite + scripts
+│
+├─ 🧪 tests/                # Tests automáticos (PHPUnit)
+│
+├─ 🚏 routes/
+│  └─ web.php              # Rutas principales del proyecto
+│
+├─ 📦 node_modules/         # Dependencias front-end
+├─ 📦 vendor/               # Dependencias PHP (Composer)
+│
+├─ 📝 README.md
+├─ 💾 composer.json
+├─ 💾 package.json
+├─ ⚙ vite.config.js
+└─ ⚙ tailwind.config.js
 ```
 
 ### 🎯 Rutas principales del proyecto
