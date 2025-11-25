@@ -1,9 +1,15 @@
 # 📝 BLOG-LARAVEL — Proyecto CRUD con Laravel 10 + Breeze  
 > Un blog moderno, rápido y con un diseño dark-mode profesional.
 
+---
+
 **Autor:** Alberto Jiménez Rodríguez
 **Curso:** 2025/2026 — Desarrollo Web Full Stack (2º DAW)
 **Profesor:** Alfredo Vozmediano
+
+---
+
+
 
 ![Laravel](https://img.shields.io/badge/Laravel-10.x-ff2d20?style=for-the-badge&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.x-787cb5?style=for-the-badge&logo=php&logoColor=white)
@@ -65,8 +71,8 @@ El objetivo del proyecto es aprender buenas prácticas en:
 
 ### 1️⃣ Clonar repositorio
 ```bash
-git clone https://github.com/TU-USUARIO/TU-REPO.git
-cd TU-REPO
+git clone https://github.com/jimeenx9/blog-laravel-php-crud
+cd app
 
 ```
 
@@ -106,9 +112,8 @@ php artisan migrate
 php artisan serve
 npm run dev
 ```
-
+### 📁 Estructura del Proyecto
 ```bash
-🗂 Estructura del Proyecto
 ├─ app/
 │  ├─ Models/
 │  ├─ Http/
