@@ -7,14 +7,12 @@
 - **Curso:** 2025/2026 — Desarrollo Web Full Stack (2º DAW)  
 - **Profesor:** Alfredo Vozmediano
 
-
 ---
+
 
 ![Laravel](https://img.shields.io/badge/Laravel-10.x-ff2d20?style=for-the-badge&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.x-787cb5?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-00758f?style=for-the-badge&logo=mysql&logoColor=white)
-![Status](https://img.shields.io/badge/Status-En%20desarrollo-purple?style=for-the-badge)
-
 ---
 
 ## 📌 Descripción del proyecto
@@ -184,9 +182,6 @@ A continuación se muestran algunas pantallas del proyecto.
 
 #### 📁 Mis artículos  
 ![Mis artículos](/img/mis-articulos.png)
-
-
-
 
 ---
 
