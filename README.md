@@ -5,7 +5,7 @@
 
 - **Autor:** Alberto Jiménez Rodríguez  
 - **Curso:** 2025/2026 — Desarrollo Web Full Stack (2º DAW)  
-- **Profesor:** Alfredo Vozmediano
+- **Profesor:** Alfredo Moreno Vozmediano
 
 ---
 
