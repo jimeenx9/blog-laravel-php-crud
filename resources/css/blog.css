@@ -1,0 +1,459 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* ======== FONDO GLOBAL ======== */
+body {
+    background: #343459;        /* 🔥 Fondo oscuro moderno */
+    color: #e5e5e5;             /* Texto general */
+    font-family: "Inter", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ======== HEADER ======== */
+
+.main-header {
+    background: #121216;
+    padding: 14px 40px;
+    border-bottom: 1px solid #1e1e24;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.brand-main {
+    color: #a259ff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.brand-sub {
+    color: #6f6f7a;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-link {
+    color: #c6c6cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #030106;
+}
+
+.nav-user {
+    color: #d6d6d6;
+    font-weight: 600;
+}
+
+/* ======== BOTONES PEQUEÑOS ======== */
+
+.btn-small {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+/* Colores */
+.purple {
+    background: #8838f0;
+    color: white;
+}
+
+.registrarme{
+    color: #8838f0;
+}
+.purple:hover {
+    background: #c08aff;
+}
+
+.grey {
+    background: #2c2c31;
+    color: #cdc4c4;
+}
+.grey:hover {
+    background: #404048;
+}
+
+.danger {
+    background: #ff4d4f;
+    color: white;
+}
+.danger:hover {
+    background: #d9363e;
+}
+
+/* ======== CONTENIDO ======== */
+.page-content {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+}
+
+
+/* ================================ */
+/*      CONTENIDO / PANEL GENERAL   */
+/* ================================ */
+
+/* === SECCIÓN DE CABECERA DE ARTÍCULOS === */
+
+/* ================================ */
+/*      BLOQUE PRINCIPAL (TÍTULO)   */
+/* ================================ */
+
+.panel-header {
+    text-align: center;
+    margin: 0 auto 50px auto;
+    padding: 40px 30px;
+    max-width: 750px;
+
+    background: rgba(255, 255, 255, 0.03); /* sutil */
+    border: 1px solid rgba(162, 89, 255, 0.15);
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* TÍTULO PRINCIPAL */
+/* ============================================= */
+/*    CABECERA DEL FORMULARIO (CREATE/EDIT)      */
+/* ============================================= */
+
+.panel-header {
+    text-align: center;
+    margin: 0 auto 40px auto;
+    padding: 35px 30px;
+    max-width: 700px;
+
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(162, 89, 255, 0.15);
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+}
+
+.panel-header h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #c9a6ff;
+    margin-bottom: 6px;
+    text-shadow: 0 0 12px rgba(162, 89, 255, 0.3);
+}
+
+.panel-header .panel-subtitle {
+    font-size: 16px;
+    color: #e0d7f7;
+    opacity: 0.9;
+}
+
+.panel-header::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin: 18px auto 0 auto;
+
+    background: linear-gradient(90deg, #a259ff, #c08aff);
+    border-radius: 3px;
+}
+
+
+
+
+/* ================================ */
+/*          TARJETAS (CARDS)        */
+/* ================================ */
+
+.article-card {
+    margin-top: 15px;
+    background: #151525;         /* Igual que el header pero un poco más claro */
+    border: 1px solid #1f1f25;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.article-card:hover {
+    background: #191920;
+    border-color: #2b2b33;
+    transform: translateY(-3px);
+}
+
+.article-title a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e8e8ee;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.article-title a:hover {
+    color: #c08aff; /* Hover violeta como el header */
+}
+
+.article-meta {
+    color: #9a9aa2;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+/* ================================ */
+/*    ACCIONES DENTRO DE LA CARD    */
+/* ================================ */
+
+.article-actions.right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.article-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* BOTÓN BASE */
+.btn-small {
+    padding: 7px 13px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* EDITAR */
+.btn-small.edit {
+    background: #8838f0;
+    color: white;
+    box-shadow: 0 0 10px rgba(162, 89, 255, 0.25);
+}
+
+.btn-small.edit:hover {
+    background: #c08aff;
+}
+
+
+/* ELIMINAR */
+.btn-small.danger {
+    background: #e01818;
+    color: white;
+    box-shadow: 0 0 10px rgba(217, 63, 135, 0.25);
+}
+
+.btn-small.danger:hover {
+    background: #c72f78;
+}
+
+/* ===================================================== */
+/*                    LOGIN / REGISTER                   */
+/* ===================================================== */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.auth-card {
+    background: #141418;
+    padding: 35px 40px;
+    width: 380px;
+    border-radius: 16px;
+    border: 1px solid #1f1f25;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.auth-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #b37dff;
+    margin-bottom: 5px;
+}
+
+.auth-subtitle {
+    color: #cfcfe6;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.auth-label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #cfcfe6;
+    margin-bottom: 6px;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 12px;
+    background: #1c1c21;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 18px;
+}
+
+.auth-input:focus {
+    outline: 2px solid #a259ff;
+}
+
+.auth-btn-primary {
+    width: 100%;
+    background: #a259ff;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+.auth-btn-primary:hover {
+    background: #c08aff;
+}
+
+.auth-register {
+    margin-top: 18px;
+    color: #ddd;
+}
+
+.auth-register a {
+    color: #a259ff;
+    font-weight: bold;
+}
+
+.auth-page {
+    max-width: 420px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #141418;
+    border-radius: 14px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.3);
+    color: white;
+}
+
+/* =============================== */
+/*     FORMULARIO ARTÍCULOS       */
+/* =============================== */
+
+.form-card {
+    background: #1b1b25;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #272734;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    margin-top: 20px;
+    max-width: 700px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #cfcfe6;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    background: #262636;
+    border: 1px solid #383848;
+    border-radius: 8px;
+    padding: 12px;
+    color: #000000;
+    font-size: 15px;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #a259ff;
+    box-shadow: 0 0 6px rgba(162,89,255,0.45);
+}
+
+/* Botón */
+.btn-form-submit {
+    background: linear-gradient(90deg, #a259ff, #c08aff);
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.25s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-form-submit:hover {
+    background: linear-gradient(90deg, #8d3fff, #b67bff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(162,89,255,0.35);
+}
+
+
+.create-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.form-title-block h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #c9a6ff;
+    letter-spacing: 0.8px;
+    text-shadow: 0 0 12px rgba(162, 89, 255, 0.35);
+    margin-bottom: 12px;
+}

@@ -1,0 +1,71 @@
+
+./vendor/bin/sail up -d
+
+./vendor/bin/sail down
+
+Si pones http://localhost/hola/Alberto → te saluda con tu nombre.
+
+Si pones http://localhost/hola → usa el saludo base.
+
+http://localhost/articles-page
+
+
+./vendor/bin/sail artisan make:migration create_articles_table
+
+./vendor/bin/sail artisan make:model Article
+
+./vendor/bin/sail artisan make:seeder UserSeeder
+
+ ./vendor/bin/sail artisan make:seeder ArticleSeeder
+
+
+-------------------------------------------------
+ ./vendor/bin/sail artisan migrate:fresh --seed
+------------------------------------------------
+
+ ./vendor/bin/sail artisan migrate --seed
+
+
+ http://localhost/test-db
+
+ *Crear controlador de articulos*
+ ./vendor/bin/sail artisan make:controller ArticleController
+
+ http://localhost/articles
+
+ http://localhost/articles/create
+
+ http://localhost/register
+
+  http://localhost/login
+
+  user: admin
+  email: admin@admin.com
+  contraseña: adminadmin
+
+  ./vendor/bin/sail npm run dev
+
+  Rutas reales del blog:
+GET  /articles           ← ver todos
+GET  /articles/{id}      ← ver uno
+GET  /articles/create    ← formulario (solo logueado)
+POST /articles           ← crear (solo logueado)
+GET  /articles/{id}/edit ← editar (solo dueño)
+PUT  /articles/{id}      ← actualizar (solo dueño)
+DELETE /articles/{id}    ← eliminar (solo dueño)
+GET  /my-articles        ← mis artículos
+
+Rutas del sistema:
+/register
+/login
+/logout
+/dashboard
+/profile
+
+Rutas de pruebas (pueden borrarse):
+/hola
+/hola/{nombre?}
+/articles-page
+/test-db
+
+
