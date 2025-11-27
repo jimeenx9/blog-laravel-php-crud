@@ -13,9 +13,11 @@
 ![Laravel](https://img.shields.io/badge/Laravel-10.x-ff2d20?style=for-the-badge&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.x-787cb5?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-00758f?style=for-the-badge&logo=mysql&logoColor=white)
+
+---
+## 📌 Descripción del proyecto
 ---
 
-## 📌 Descripción del proyecto
 **BLOG-LARAVEL** es un blog totalmente funcional construido con **Laravel 10**, que incluye:
 
 ✔ Sistema de autenticación completo (login + registro)  
@@ -35,8 +37,8 @@ El objetivo del proyecto es aprender buenas prácticas en:
 🔹 Arquitectura MVC  
 
 ---
-
 ## 📚 Características principales
+---
 
 ### 🔐 Autenticación (Laravel Breeze)
 - Registro de usuarios  
@@ -62,22 +64,33 @@ El objetivo del proyecto es aprender buenas prácticas en:
 - Animaciones suaves  
 - Layout master unificado  
 
+
+---
+## 🐳 Arrancar el proyecto con Laravel Sail (Docker)
 ---
 
-## 🚀 Instalación y puesta en marcha
+### 1️⃣ Iniciar el entorno
 
-### 1️⃣ Clonar repositorio
 ```bash
-git clone https://github.com/jimeenx9/blog-laravel-php-crud
-cd app
-
+./vendor/bin/sail up -d
 ```
 
-### 2️⃣ Instalar dependencias
+## ⛔ Detener contenedores
 ```bash
-composer install
-npm install
+./vendor/bin/sail down
 ```
+
+**Esto levanta:**
+
+- Contenedor PHP
+
+- MySQL
+
+- Redis (si estuviera configurado)
+
+- Node + Vite
+
+- Servidor Laravel
 
 ### 3️⃣ Crear archivo .env
 ```bash
@@ -107,9 +120,14 @@ php artisan migrate
 ### 7️⃣ Lanzar servidor
 ```bash
 php artisan serve
-npm run dev
+./vendor/bin/sail npm run dev
 ```
-### 📁 Estructura del Proyecto
+
+
+---
+## 📁 Estructura del Proyecto
+---
+
 ```bash
 
 ├─ 🧠 app/
